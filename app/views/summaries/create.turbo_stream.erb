@@ -1,0 +1,2 @@
+<%= turbo_stream.prepend "summaries", partial: "summary", locals: { summary: @summary } %>
+<%= turbo_stream.replace "new_summary", partial: "form", locals: { summary: Summary.new } %>

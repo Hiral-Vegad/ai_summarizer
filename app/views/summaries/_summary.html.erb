@@ -1,0 +1,9 @@
+<div class="summary-box">
+  <p><strong>Original:</strong></p>
+  <p><%= simple_format(summary.original) %></p>
+
+  <p><strong>Summary:</strong></p>
+  <p><%= summary.result.present? ? simple_format(summary.result) : "Summarizing..." %></p>
+
+  <hr>
+</div>

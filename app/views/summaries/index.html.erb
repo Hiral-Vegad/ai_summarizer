@@ -1,0 +1,9 @@
+<h1>AI Text Summarizer</h1>
+
+<%= turbo_stream_from "summaries" %>
+
+<%= render "form", summary: @summary %>
+
+<div id="summaries">
+  <%= render @summaries %>
+</div>

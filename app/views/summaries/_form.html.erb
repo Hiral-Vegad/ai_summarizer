@@ -1,0 +1,9 @@
+<%= form_with model: summary, id: "new_summary", url: summaries_path, data: { turbo_stream: true } do |f| %>
+  <div>
+    <%= f.label :original, "Enter text to summarize:" %><br>
+    <%= f.text_area :original, rows: 10, cols: 80 %>
+  </div>
+  <div>
+    <%= f.submit "Summarize" %>
+  </div>
+<% end %>
